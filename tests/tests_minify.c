@@ -4,23 +4,15 @@
 
 #include "../minify/minify.h"
 
-void test_minifyNiceHtml()
+void test_minifySimpleHtml()
 {
     char *string = (char *)malloc(1000 * sizeof(char));
-    strcpy(string, "\
-                <html>\
-                    <head>\
-                        <title>Hello world</title>\
-                    </head>\
-                    <body>\
-                        Hello world.\
-                    </body>\
-                </html>");
-    assert(strcmp(minify(string), "<html><head><title>Hello world</title></head><body>Hello world.</body></html>") == 0);
+    strcpy(string, "          <p>Hello world</p>   ");
+    assert(strcmp(minify(string), "<p>Hello world</p>") == 0);
 }
 
 int main ()
 {
-    test_minifyNiceHtml();
+    test_minifySimpleHtml();
     return 0;
 }
