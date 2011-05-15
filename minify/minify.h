@@ -1,0 +1,1 @@
+char *minify(char *inputHtml);
