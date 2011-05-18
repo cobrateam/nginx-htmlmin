@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * minify(char *inputHtml)
+char * minify(const char *inputHtml)
 {
     int i, count = 0;
     int length = strlen(inputHtml);

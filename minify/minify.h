@@ -1,1 +1,1 @@
-char *minify(char *inputHtml);
+char *minify(const char *inputHtml);
