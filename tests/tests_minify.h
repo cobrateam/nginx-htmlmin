@@ -1,0 +1,3 @@
+void testMinifySimpleHtml();
+
+void testMinifyHtmlWithSpace();
