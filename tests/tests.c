@@ -7,5 +7,6 @@ int main ()
     testMinifyHtmlWithSpace();
 
     testTrimStringWithSpacesOnlyAtTheBeggining();
+    testTrimStringWithSpacesAtEnd();
     return 0;
 }

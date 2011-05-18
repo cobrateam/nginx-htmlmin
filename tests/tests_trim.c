@@ -8,6 +8,13 @@
 void testTrimStringWithSpacesOnlyAtTheBeggining()
 {
     char *inputString = (char *)malloc(100 * sizeof(char));
-    strcpy(inputString, "      oi chico!");
-    assert(strcmp(trim(inputString), "oi chico!") == 0);
+    strcpy(inputString, "      hello world!");
+    assert(strcmp(trim(inputString), "hello world!") == 0);
+}
+
+void testTrimStringWithSpacesAtEnd()
+{
+    char *inputString = (char *)malloc(100 * sizeof(char));
+    strcpy(inputString, "hello world!     ");
+    assert(strcmp(trim(inputString), "hello world!") == 0);
 }
