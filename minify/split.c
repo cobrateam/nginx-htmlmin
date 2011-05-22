@@ -29,7 +29,7 @@ char ** split(const char *string)
     {
         if (character == '\n')
         {
-            currentLine[currentLineCounter] = 0;
+            *(currentLine + currentLineCounter) = 0;
             int l = strlen(currentLine);
             if (l < lineSize)
             {
