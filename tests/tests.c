@@ -5,6 +5,7 @@ int main ()
 {
     testMinifySimpleHtml();
     testMinifyHtmlWithSpace();
+    testMinifyMultilineHtml();
 
     testTrimStringWithSpacesOnlyAtTheBeggining();
     testTrimStringWithSpacesAtEnd();

@@ -18,3 +18,10 @@ void testMinifyHtmlWithSpace()
     strcpy(string, "          <p>Hello world</p>");
     assert(strcmp(minify(string), "<p>Hello world</p>") == 0);
 }
+
+void testMinifyMultilineHtml()
+{
+    char *string = (char *)malloc(1000 * sizeof(char));
+    strcpy(string, "<html>\n<body>\n    <p>Hello world!</p>\n    </body>\n</html>");
+    assert(strcmp(minify(string), "<html><body><p>Hello world!</p></body></html>") == 0);
+}
