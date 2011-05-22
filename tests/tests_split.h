@@ -1,0 +1,3 @@
+void testCountCharOnAString();
+
+void testSplitString();
