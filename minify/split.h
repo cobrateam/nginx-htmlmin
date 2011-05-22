@@ -1,3 +1,3 @@
-int countChar(char *string, char character);
+int countChar(const char *string, const char character);
 
-char **split(char *string);
+char **split(const char *string);
